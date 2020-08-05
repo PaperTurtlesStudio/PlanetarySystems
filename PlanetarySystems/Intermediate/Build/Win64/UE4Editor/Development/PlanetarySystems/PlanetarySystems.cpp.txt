@@ -1,0 +1,2 @@
+D:\GitHub\PlanetarySystems\PlanetarySystems\Intermediate\Build\Win64\UE4Editor\Development\PlanetarySystems\Definitions.PlanetarySystems.h
+D:\GitHub\PlanetarySystems\PlanetarySystems\Source\PlanetarySystems\PlanetarySystems.h

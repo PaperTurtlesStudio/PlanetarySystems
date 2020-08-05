@@ -1,0 +1,7 @@
+D:\GitHub\PlanetarySystems\PlanetarySystems\Intermediate\Build\Win64\UE4Editor\Development\PlanetarySystems\Definitions.PlanetarySystems.h
+D:\GitHub\PlanetarySystems\PlanetarySystems\Source\PlanetarySystems\Characters\PlayerCharacter.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\GitHub\PlanetarySystems\PlanetarySystems\Intermediate\Build\Win64\UE4Editor\Inc\PlanetarySystems\PlayerCharacter.generated.h

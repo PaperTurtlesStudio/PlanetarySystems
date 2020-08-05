@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\GitHub\\PlanetarySystems\\PlanetarySystems\\Source\\PlanetarySystems\\PlanetarySystems.Build.cs",
+		"D:\\GitHub\\PlanetarySystems\\PlanetarySystems\\Source\\PlanetarySystems.Target.cs",
+		"D:\\GitHub\\PlanetarySystems\\PlanetarySystems\\Source\\PlanetarySystemsEditor.Target.cs"
+	],
+	"EngineVersion": "4.25.3"
+}

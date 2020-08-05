@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\PlanetarySystems.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{D176DF1C-C408-4A70-A9A5-3BF93A3351EE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PlanetarySystems.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\PlanetarySystemsEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0961C122-2F42-48FE-A5BE-CE5FF50D9B21}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\PlanetarySystems">
+      <UniqueIdentifier>{0E765955-B65F-4945-A9D9-67205B193D74}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PlanetarySystems\PlanetarySystems.Build.cs">
+      <Filter>Source\PlanetarySystems</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\PlanetarySystems\PlanetarySystems.cpp">
+      <Filter>Source\PlanetarySystems</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlanetarySystems\PlanetarySystems.h">
+      <Filter>Source\PlanetarySystems</Filter>
+    </ClInclude>
+    <Filter Include="Source\PlanetarySystems\Characters">
+      <UniqueIdentifier>{45C1BB2F-B0A6-4D67-B1FB-9408BFD6AEDE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PlanetarySystems\Characters\PlayerCharacter.cpp">
+      <Filter>Source\PlanetarySystems\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlanetarySystems\Characters\PlayerCharacter.h">
+      <Filter>Source\PlanetarySystems\Characters</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlanetarySystems\Characters\SpaceshipCharacter.cpp">
+      <Filter>Source\PlanetarySystems\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlanetarySystems\Characters\SpaceshipCharacter.h">
+      <Filter>Source\PlanetarySystems\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\PlanetarySystems\GameMode">
+      <UniqueIdentifier>{3A6C7E8A-9891-41D5-914B-61AF2A0C8E95}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PlanetarySystems\GameMode\PSGameModeBase.cpp">
+      <Filter>Source\PlanetarySystems\GameMode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlanetarySystems\GameMode\PSGameModeBase.h">
+      <Filter>Source\PlanetarySystems\GameMode</Filter>
+    </ClInclude>
+    <Filter Include="Source\PlanetarySystems\Pawns">
+      <UniqueIdentifier>{6DA9D044-DED6-4B39-995F-8B008CCABD1A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PlanetarySystems\Pawns\SpaceshipPawn.cpp">
+      <Filter>Source\PlanetarySystems\Pawns</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlanetarySystems\Pawns\SpaceshipPawn.h">
+      <Filter>Source\PlanetarySystems\Pawns</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
