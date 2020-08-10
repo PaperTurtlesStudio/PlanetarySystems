@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PlanetarySystems.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{D176DF1C-C408-4A70-A9A5-3BF93A3351EE}</UniqueIdentifier>
+      <UniqueIdentifier>{EBEB53A4-9DE6-4C09-8428-292FA4FFD644}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PlanetarySystems.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0961C122-2F42-48FE-A5BE-CE5FF50D9B21}</UniqueIdentifier>
+      <UniqueIdentifier>{59972C7F-809E-46E6-9DAA-DC11BB6B4C03}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PlanetarySystems">
-      <UniqueIdentifier>{0E765955-B65F-4945-A9D9-67205B193D74}</UniqueIdentifier>
+      <UniqueIdentifier>{5C6F954A-0A8D-4E43-B74A-B82DAE5D620D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PlanetarySystems\PlanetarySystems.Build.cs">
       <Filter>Source\PlanetarySystems</Filter>
@@ -38,8 +38,14 @@
     <ClInclude Include="..\..\Source\PlanetarySystems\PlanetarySystems.h">
       <Filter>Source\PlanetarySystems</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PlanetarySystems\ReturnToSpace.cpp">
+      <Filter>Source\PlanetarySystems</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlanetarySystems\ReturnToSpace.h">
+      <Filter>Source\PlanetarySystems</Filter>
+    </ClInclude>
     <Filter Include="Source\PlanetarySystems\Characters">
-      <UniqueIdentifier>{45C1BB2F-B0A6-4D67-B1FB-9408BFD6AEDE}</UniqueIdentifier>
+      <UniqueIdentifier>{0EC66B3B-9BF1-40F0-9D22-D87723B8BDE5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PlanetarySystems\Characters\PlayerCharacter.cpp">
       <Filter>Source\PlanetarySystems\Characters</Filter>
@@ -54,7 +60,7 @@
       <Filter>Source\PlanetarySystems\Characters</Filter>
     </ClInclude>
     <Filter Include="Source\PlanetarySystems\GameMode">
-      <UniqueIdentifier>{3A6C7E8A-9891-41D5-914B-61AF2A0C8E95}</UniqueIdentifier>
+      <UniqueIdentifier>{54E5E971-CCC7-4177-A790-884D45AEA848}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PlanetarySystems\GameMode\PSGameModeBase.cpp">
       <Filter>Source\PlanetarySystems\GameMode</Filter>
@@ -62,8 +68,20 @@
     <ClInclude Include="..\..\Source\PlanetarySystems\GameMode\PSGameModeBase.h">
       <Filter>Source\PlanetarySystems\GameMode</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PlanetarySystems\GameMode\PSGameModeBase_Planet.cpp">
+      <Filter>Source\PlanetarySystems\GameMode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlanetarySystems\GameMode\PSGameModeBase_Planet.h">
+      <Filter>Source\PlanetarySystems\GameMode</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlanetarySystems\GameMode\PSGameModeBase_Space.cpp">
+      <Filter>Source\PlanetarySystems\GameMode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlanetarySystems\GameMode\PSGameModeBase_Space.h">
+      <Filter>Source\PlanetarySystems\GameMode</Filter>
+    </ClInclude>
     <Filter Include="Source\PlanetarySystems\Pawns">
-      <UniqueIdentifier>{6DA9D044-DED6-4B39-995F-8B008CCABD1A}</UniqueIdentifier>
+      <UniqueIdentifier>{5B58E52A-F423-4BAE-8510-6D7C0C57D35F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PlanetarySystems\Pawns\SpaceshipPawn.cpp">
       <Filter>Source\PlanetarySystems\Pawns</Filter>

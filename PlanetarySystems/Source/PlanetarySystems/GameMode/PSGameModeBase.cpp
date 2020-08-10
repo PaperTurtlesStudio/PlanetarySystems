@@ -3,3 +3,8 @@
 
 #include "PSGameModeBase.h"
 
+void APSGameModeBase::BeginPlay()
+{
+	Super::BeginPlay();
+
+}

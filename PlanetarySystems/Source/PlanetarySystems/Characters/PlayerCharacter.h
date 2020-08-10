@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "PlayerCharacter.generated.h"
 
+class UReturnToSpace;
+
 UCLASS()
 class PLANETARYSYSTEMS_API APlayerCharacter : public ACharacter
 {
@@ -26,6 +28,10 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	void SwapLevel();
+	
+	bool ReadyForSpace = false;
+
 private:
 
 	void MoveForward(float AxisValue);
@@ -34,8 +40,8 @@ private:
 	void LookUpRate(float AxisValue);
 	void LookRightRate(float AxisValue);
 
-
 	UPROPERTY(EditAnywhere)
 	float RotationRate = 10.f;
+
 
 };

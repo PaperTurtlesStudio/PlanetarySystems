@@ -59,7 +59,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASpaceshipPawn); \
 
 
 #define PlanetarySystems_Source_PlanetarySystems_Pawns_SpaceshipPawn_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__RotationRate() { return STRUCT_OFFSET(ASpaceshipPawn, RotationRate); }
+	FORCEINLINE static uint32 __PPO__RotationRate() { return STRUCT_OFFSET(ASpaceshipPawn, RotationRate); } \
+	FORCEINLINE static uint32 __PPO__InitialSpeed() { return STRUCT_OFFSET(ASpaceshipPawn, InitialSpeed); } \
+	FORCEINLINE static uint32 __PPO__MediumSpeed() { return STRUCT_OFFSET(ASpaceshipPawn, MediumSpeed); } \
+	FORCEINLINE static uint32 __PPO__FastestSpeed() { return STRUCT_OFFSET(ASpaceshipPawn, FastestSpeed); }
 
 
 #define PlanetarySystems_Source_PlanetarySystems_Pawns_SpaceshipPawn_h_9_PROLOG

@@ -28,14 +28,25 @@ public:
 
 private:
 
-	void MoveForward(float AxisValue);
-	void MoveRight(float AxisValue);
+	void MoveForward();
+	void AdjustSpeed();
+	void SubtractSpeed();
 
 	void LookUpRate(float AxisValue);
 	void LookRightRate(float AxisValue);
 
+	void SwapLevel();
+
 	FVector MoveDirection;
+	float SpeedTracker = 1;
+	float Speed;
 
 	UPROPERTY(EditAnywhere)
 	float RotationRate = 10.f;
+	UPROPERTY(EditAnywhere)
+	float InitialSpeed = 100.f;
+	UPROPERTY(EditAnywhere)
+	float MediumSpeed = 1000.f;
+	UPROPERTY(EditAnywhere)
+	float FastestSpeed = 10000.f;
 };

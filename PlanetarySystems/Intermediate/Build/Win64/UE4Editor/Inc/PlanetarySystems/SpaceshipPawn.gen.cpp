@@ -32,6 +32,18 @@ void EmptyLinkFunctionForGeneratedCodeSpaceshipPawn() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FastestSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_FastestSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MediumSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MediumSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InitialSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_InitialSpeed;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RotationRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RotationRate;
@@ -51,6 +63,27 @@ void EmptyLinkFunctionForGeneratedCodeSpaceshipPawn() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_FastestSpeed_MetaData[] = {
+		{ "Category", "SpaceshipPawn" },
+		{ "ModuleRelativePath", "Pawns/SpaceshipPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_FastestSpeed = { "FastestSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceshipPawn, FastestSpeed), METADATA_PARAMS(Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_FastestSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_FastestSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_MediumSpeed_MetaData[] = {
+		{ "Category", "SpaceshipPawn" },
+		{ "ModuleRelativePath", "Pawns/SpaceshipPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_MediumSpeed = { "MediumSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceshipPawn, MediumSpeed), METADATA_PARAMS(Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_MediumSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_MediumSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_InitialSpeed_MetaData[] = {
+		{ "Category", "SpaceshipPawn" },
+		{ "ModuleRelativePath", "Pawns/SpaceshipPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_InitialSpeed = { "InitialSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceshipPawn, InitialSpeed), METADATA_PARAMS(Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_InitialSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_InitialSpeed_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_RotationRate_MetaData[] = {
 		{ "Category", "SpaceshipPawn" },
 		{ "ModuleRelativePath", "Pawns/SpaceshipPawn.h" },
@@ -58,6 +91,9 @@ void EmptyLinkFunctionForGeneratedCodeSpaceshipPawn() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_RotationRate = { "RotationRate", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpaceshipPawn, RotationRate), METADATA_PARAMS(Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_RotationRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_RotationRate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpaceshipPawn_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_FastestSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_MediumSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_InitialSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpaceshipPawn_Statics::NewProp_RotationRate,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASpaceshipPawn_Statics::StaticCppClassTypeInfo = {
@@ -87,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceshipPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpaceshipPawn, 1659662811);
+	IMPLEMENT_CLASS(ASpaceshipPawn, 683214299);
 	template<> PLANETARYSYSTEMS_API UClass* StaticClass<ASpaceshipPawn>()
 	{
 		return ASpaceshipPawn::StaticClass();

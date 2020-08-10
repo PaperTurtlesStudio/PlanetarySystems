@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
+#include "Kismet/GameplayStatics.h"
 #include "SpaceshipPawn.h"
 
 // Sets default values
@@ -15,13 +16,17 @@ ASpaceshipPawn::ASpaceshipPawn()
 void ASpaceshipPawn::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	FString name = GetWorld()->GetName();
+	UE_LOG(LogTemp, Warning, TEXT("%s"), *name);
+
 }
 
 // Called every frame
 void ASpaceshipPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	MoveForward();
 
 }
 
@@ -30,17 +35,56 @@ void ASpaceshipPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &ASpaceshipPawn::MoveForward);
-	PlayerInputComponent->BindAxis(TEXT("LookUpRate"), this, &ASpaceshipPawn::LookUpRate);
-	PlayerInputComponent->BindAxis(TEXT("LookRightRate"), this, &ASpaceshipPawn::LookRightRate);
+	//PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
+	//PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &APawn::AddControllerYawInput);
+	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &ASpaceshipPawn::LookUpRate);
+	PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &ASpaceshipPawn::LookRightRate);
+	PlayerInputComponent->BindAxis(TEXT("Controller_LookUpRate"), this, &ASpaceshipPawn::LookUpRate);
+	PlayerInputComponent->BindAxis(TEXT("Controller_LookRightRate"), this, &ASpaceshipPawn::LookRightRate);
+
+	PlayerInputComponent->BindAction(TEXT("Spaceship_AddSpeed"), EInputEvent::IE_Pressed, this, &ASpaceshipPawn::AdjustSpeed);
+	PlayerInputComponent->BindAction(TEXT("Spaceship_SubtractSpeed"), EInputEvent::IE_Pressed, this, &ASpaceshipPawn::SubtractSpeed);
+
+	PlayerInputComponent->BindAction(TEXT("SwapLevel"), EInputEvent::IE_Pressed, this, &ASpaceshipPawn::SwapLevel);
 }
 
-void ASpaceshipPawn::MoveForward(float AxisValue)
+void ASpaceshipPawn::AdjustSpeed()
 {
-	AddMovementInput(GetActorForwardVector() * AxisValue);
-	MoveDirection = FVector(AxisValue * 10000.f * GetWorld()->DeltaTimeSeconds, 0.f, 0.f);
+	if (SpeedTracker != 3)
+	{
+		SpeedTracker++;
+		RotationRate -= 15;
+		UE_LOG(LogTemp, Error, TEXT("%f"), RotationRate);
+	}
+}
+
+void ASpaceshipPawn::SubtractSpeed()
+{
+	if (SpeedTracker != 1)
+	{
+		SpeedTracker--;
+		RotationRate += 15;
+		UE_LOG(LogTemp, Error, TEXT("%f"), RotationRate);
+	}
+}
+
+
+void ASpaceshipPawn::MoveForward()
+{
+	if (SpeedTracker == 3)
+	{
+		Speed = FastestSpeed;
+	}
+	else if (SpeedTracker == 2)
+	{
+		Speed = MediumSpeed;
+	}
+	else if (SpeedTracker == 1)
+	{
+		Speed = InitialSpeed;
+	}
+
+	MoveDirection = FVector(Speed * GetWorld()->DeltaTimeSeconds + InitialSpeed, 0.f, 0.f);
 	AddActorLocalOffset(MoveDirection, true);
 }
 
@@ -52,5 +96,10 @@ void ASpaceshipPawn::LookUpRate(float AxisValue)
 void ASpaceshipPawn::LookRightRate(float AxisValue)
 {
 	AddControllerYawInput(AxisValue * RotationRate * GetWorld()->GetDeltaSeconds());
+}
+
+void ASpaceshipPawn::SwapLevel()
+{
+	UGameplayStatics::OpenLevel(GetWorld(), "PlanetBlocking");
 }
 
